@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/swal/sweetalert2.min.css">
+    <script src="../js/swal/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/recipeList.css">
+    <script src="../js/jquery/jquery-2.2.4.min.js"></script>
+    <title>Recipe List</title>
+</head>
+
+<body>
+    <div id="loader" class="center"></div>
+    <header></header>
+    <div id="title">
+
+    </div>
+    <section class="best-receipe-area">
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 100px;">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h3>Receipies List</h3>
+                        <div id="searchbox">
+                            <label>Search: </label>
+                            <input id="search" type="text" onkeyup="search()" placeholder="Search...."><i class="fas fa-search"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row" id="recipes">
+
+            </div>
+
+        </div>
+    </section>
+</body>
+<script src="../js/url.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/recipeList.js"></script>
+<script src="../js/bootstrap/bootstrap.min.js"></script>
+<script src="../js/active.js"></script>
+</html>

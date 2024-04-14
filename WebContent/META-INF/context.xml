@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/Main_Project">
+<Resource auth="Container"
+driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" maxIdle="10" maxTotal="100" maxWaitMillis="-1"
+name="jdbc/datasource" password="ajRal!sql45" type="javax.sql.DataSource"
+url="jdbc:sqlserver://192.168.3.125:1433;databaseName=SQLTraining;" username="AjayBalu" validationQuery="select 1"/>
+</Context>
