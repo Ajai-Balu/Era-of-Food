@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ERA OF FOOD | Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/url.js"></script>        
+    <script src="js/swal/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="css/swal/sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <div id="loader" class="center"></div>
+    <!-- ##### Header Area Start ##### -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area ">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img class="logo-pic" src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-10">
+                            <div class="main-menu   d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="index.html">home</a></li>
+                                        <li><a href="views/form.html">Add</a></li>
+                                        <li><a href="#">Category <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="#" onclick="recipeList('Veg','Category')">Veg</a></li>
+                                                <li><a href="#" onclick="recipeList('Non Veg','Category')">Non Veg</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Recipes <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="#" onclick="recipeList('All','Recipes')">All</a></li>
+                                                <li><a href="#" onclick="recipeList('Main Dish','Recipes')">Main Dish</a></li>
+                                                <li><a href="#" onclick="recipeList('Side Dish','Recipes')">Side Dish</a></li>
+                                                <li><a href="#" onclick="recipeList('Soup','Recipes')">Soup</a></li>
+                                                <li><a href="#" onclick="recipeList('Salad','Recipes')">Salad</a></li>
+                                                <li><a href="#" onclick="recipeList('Dessert','Recipes')">Dessert</a></li>
+                                                <li><a href="#" onclick="recipeList('Drinks','Recipes')">Drinks</a></li>
+                                                <li><a href="#" onclick="recipeList('Snacks','Recipes')">Snacks</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Cuisine <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="#" onclick="recipeList('All','Cuisine')">All</a></li>
+                                                <li><a href="#" onclick="recipeList('Indian','Cuisine')">Indian</a></li>
+                                                <li><a href="#" onclick="recipeList('Continental','Cuisine')">Continental</a></li>
+                                                <li><a href="#" onclick="recipeList('Italian','Cuisine')">Italian</a></li>
+                                                <li><a href="#" onclick="recipeList('Chinese','Cuisine')">Chinese</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#"><span id="id-name"></span><i class="ti-angle-down"></i></a>
+                                        	<ul class="submenu">
+                                                <li><a href="views/profile.html">Profile</a></li>
+                                                <li><a href="views/myRecipes.html">My Recipes</a></li>
+                                                <li><a href="#" onclick="logout()" >Logout</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel">
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg4.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                            <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Welcome to Era of Food </h2>
+                                <p data-animation="fadeInUp" data-delay="700ms">Indian cuisine has a wide variety of regional cuisines native to India. These cuisines use locally available spices, herbs, vegetables and fruits. You can find many collections of quick and easy regional Indian Recipes and start cooking right away.</p>
+                                <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms" onclick="recipeList('Indian','Cuisine')">See Receipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg6.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                            <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Continental Dishes</h2>
+                                <p data-animation="fadeInUp" data-delay="700ms">From the rich and creamy pasta dishes of Italy to the hearty stews of France, our collection of continental recipes will take you on a culinary journey across Europe.</p>
+                                <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms" onclick="recipeList('Continental','Cuisine')">See Receipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg7.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                            <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Delicious Juice</h2>
+                                <p data-animation="fadeInUp" data-delay="700ms">Juicing has a lot of health benefits and it’s a wonderful way to get extra nutrition and veggies into your diet. You can find many collections of quick and easy juice recipes here.</p>
+                                <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms" onclick="recipeList('Drinks','Recipes')">See Receipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Best Receipe Area Start ##### -->
+    <section class="best-receipe-area">
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 100px;">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h3>The best Receipies</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="recipes">
+                <!-- Single Best Receipe Area -->
+                
+            </div>
+
+        </div>
+    </section>
+    <!-- ##### Best Receipe Area End ##### -->
+
+    <!-- ##### CTA Area Start ##### -->
+    <section class="cta-area bg-img bg-overlay" style="background-image: url(img/bg-img/bg1.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <!-- Cta Content -->
+                    <div class="cta-content text-center">
+                        <h2>Gluten Receipies</h2>
+                        <p>Cooking is like painting or writing a song. Just as there are only so many notes or colors, there are only so many flavors - it’s how you combine them that sets you apart.</p>
+                        <a href="#" class="btn delicious-btn" onclick="recipeList('All','Recipes')">Discover all the receipies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100 d-flex flex-wrap align-items-center justify-content-between">
+                    <!-- Footer Social Info -->
+                    <div class="footer-social-info text-right">
+                        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                    <!-- Footer Logo -->
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="img/logo.png" alt="" style="height: 100px; width: 100px;"></a>
+                    </div>
+                    <!-- Copywrite -->
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved 
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+<script src="js/home.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/plugins.js"></script>
+    <script src="js/active.js"></script>
+</body>
+
+</html>

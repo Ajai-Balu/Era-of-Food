@@ -1,5 +1,5 @@
 /build/
-/WebContent/css/bootstrap/
-/WebContent/css/fontawesome/
-/WebContent/js/bootstrap/
+/src/main/webapp/css/bootstrap/
+/src/main/webapp/css/fontawesome/
+/src/main/webapp/js/bootstrap/
 /.settings/

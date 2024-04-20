@@ -1,0 +1,129 @@
+#title {
+    background-image: url(../img/bg/myrecipe.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -100px;
+    height: 700px;
+    margin-bottom: -150px;
+}
+
+
+.recipe-img {
+    height: 350px;
+    background-position: center center;
+}
+
+
+a,
+a:hover,
+a:focus {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    text-decoration: none;
+    outline: 0 solid transparent;
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+    color: #474747;
+}
+
+
+#title h1 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+
+.section-heading {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.section-heading h3 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+#box{
+    margin-top: 20px;
+}
+
+
+
+/* :: 8.0 Best Receipe Area */
+.best-receipe-area {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 50px;
+}
+
+.single-best-receipe-area {
+    position: relative;
+    z-index: 1;
+}
+
+.single-best-receipe-area img {
+    border-bottom: 3px solid #40ba37;
+}
+
+.single-best-receipe-area .receipe-content {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.single-best-receipe-area .receipe-content h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.single-best-receipe-area .receipe-content h5:hover,
+.single-best-receipe-area .receipe-content h5:focus {
+    color: #40ba37;
+}
+
+#star{
+    font-size: 11px;
+    color: #fbb710;
+    display: inline-block;
+    padding: 0 1px;
+}
+
+#searchbox{
+    text-align: right;
+}
+
+#searchbox i{
+    margin-left: 10px;
+}
+
+.delete{
+    cursor: pointer;
+    top: 90%;
+    color: white;
+    position: absolute;
+    border: none;
+    right: 0;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.delete i{
+    font-size: 15px;
+    padding: 2px;
+}
