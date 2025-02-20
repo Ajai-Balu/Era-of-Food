@@ -3,7 +3,7 @@
 <Resource auth="Container"
     driverClassName="com.mysql.jdbc.Driver"
     maxIdle="10" maxTotal="100" maxWaitMillis="-1"
-    name="jdbc/datasource" password="1234" type="javax.sql.DataSource"
+    name="jdbc/datasource" password="Ajai@123" type="javax.sql.DataSource"
     url="jdbc:mysql://127.0.0.1:3306/eof" username="root" validationQuery="SELECT 1"/>
 </Context>
 
